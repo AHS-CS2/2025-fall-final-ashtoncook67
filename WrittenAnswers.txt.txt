@@ -1,0 +1,23 @@
+Inside this new file, answer the following questions. You can reference your own previous code. No googling/looking up info.
+
+Explain your Tower of Hanoi Recursion. Why does it work no matter the number of discs?
+My Tower of Hanoi works because first I call the method with the parameters as (n(the number of discs), from(where im doing the top disc from), to(where I'm moving the top disc to), aux(the other spot)) then I check if the n equals 0 and if it does I just return nothing if it doesn't then I call the method again and I put (n-1, from, aux, to) then I print out what I'm doing so I'll put ("Move " + n + " from " + from + " to " + to); then I'll check if n does not equal 1 and if it doesn't then I'll call the method again like this (n-1, aux, to, from). That is how I do my Tower of Hanoi Recursion and it works no matter how many discs because n is not a set number.
+
+What is the purpose of MinMax?
+The purpose of MinMax is to help find the best and worst scenario there is.
+
+How did you implement the MinMax algorithim in your Tic-Tac-Toe Project? Give specific line numbers. Explain why your code is indeed a MinMax algorithm.
+How I implemented Minmax into my Tic-Tac-Toe Project was I made it run through all of the opening spots until it got to where the game ended. Then I had it return -1 if the computer lost, 0 if it was a tie and 1 if the computer won. Then I would use those to decide where the computer should move. This is MinMax because it helps the computer decide where it should move to win the game.
+
+Explain what Alpha-Beta pruning is. What is it used for? Why is it needed?
+Alpha-Beta pruning is where you are almost MinMaxing but when you come across a point where you don't need to check you prune it using the alpha or beta variable you set. It is used to make your code faster so it optimizes runtime and it is needed because some computers might not be strong enough to run some code without it.
+
+Explain how you would implement Alpha-Beta pruning in your Ultimate Tic-Tac-Toe program. Give specific line numbers.
+I would implement Alpha-Beta pruning into my Ultimate Tic-Tac-Toe program by checking each possible move the current player can go and then each move the other player can do and then I'd just keep on doing that until I go as far as I want it to go or if the games over. I also have it returning different amounts for different outcomes based off worst to best. I would prune whenever possible when there is not way the player before would choose a certain spot.
+
+What is the importance of good comments in code? Can you give good/bad examples? Perhaps from your own code? 
+The importance of good comments in code is so when someone is looking at the code they understand what they are looking at instead of trying to guess, another reason would be if you want to go back to makes improvements on the code. If you don't know what the code is doing how are you going to improve it.
+A bad example of comments in code is not having any, for instance I looked back at my Tower of Hanoi project and I couldn't tell what it was doing because there was no comments. 
+
+Pick a day that you have not completed for this years Advent of Code. Give a write up explaining how you think you can solve it. This is just a proposal/pseudocode for how you would go about solving it.
+For day five I first would get each range and split each of them into 2 variables. I would have one for the lower number and one for the higher number. Then I would run a for loop checking for each of the numbers in the range and if I would find one I would add one to the total. I would do that for each of the ranges and all the numbers. 
